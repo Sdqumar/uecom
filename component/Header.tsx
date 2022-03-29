@@ -23,11 +23,12 @@ const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
 const Header: NextPage = () => {
   return (
     <Box
-      p="2rem"
+      p="1rem"
       display="flex"
       alignItems="center"
       justifyContent="space-around"
-      maxWidth="80rem"
+      borderBottom={1}
+      borderColor="#e0e0e0"
     >
       <Typography variant="h4" gutterBottom fontWeight="300">
         UCOMMERCE
@@ -42,7 +43,6 @@ const Header: NextPage = () => {
             </InputAdornment>
           }
           fullWidth
-          size="small"
           placeholder="Search For Products, Brands & Categories"
         />
       </Box>
